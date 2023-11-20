@@ -1,107 +1,94 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <title>About Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
+  <title>About Us</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* CSS for the orange line */
+    hr {
+      border: none;
+      height: 2px;
+      background-color: orange;
+      margin: 20px 0;
+    }
   
-       .navbar {
-      background-color: black;
-      height: 60px;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: #fff;
+      .text-link {
+     color: white; /* Default color */
+     text-decoration: none; /* Remove underline */
+    }
+  
+    .text-link:hover {
+     color: red; /* Color when cursor is placed on the link */
     }
 
-    .navbar-brand {
-      font-size: 24px;
+    .text-link:active {
+      color: green; /* Color when link is clicked */
     }
-
-        h1 {
-            text-align: center;
-        }
-
-        p {
-            text-align: justify;
-            line-height: 1.5;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-        }
-
-        .highlight {
-            color: #0066cc;
-            font-weight: bold;
-        }
-    </style>
+  </style>
 </head>
-
 <body>
-  <nav class="navbar">
-    <div class="navbar-brand">Web-Mastery</div>
-    <ul class="navbar-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Services.html">Services</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <h1><span style="color: orange">PixelPro</span> Web Solutions</h1>
+    <nav>
+      <ul>
+        <li><a href="indexx.html" class="text-link">Home</a></li>
+        <li><a href="Services.html" class="text-link">Services</a></li>
+        <li><a href="contact.html" class="text-link">Contact</a></li>
+        <li><a href="About.html" class="text-link">About</a></li>
+      </ul>
+    </nav>
+  </header>
+      <div class="moving-text-container">
+  <span class="moving-text">Welcome to PixelPro Web Solutions! Unleash your digital dreams with our creative expertise and pixel-perfect solutions. Let's build together!</span>
+</div>
+
+  <section id="about-section">
+    <div class="background-image">
+      <h2>About Us</h2>
+    </div>
+  </section>
+
+  <section id="subscription-section">
     <div class="container">
-        <h1>About Us</h1>
-        <img src="/storage/emulated/0/Pictures/Whatsapp/IMG-20230920-WA0006.jpg" alt="Company Logo">
-        <p>Welcome to WebMastery Digital Solutions! We are a dedicated team of professionals passionate about providing top-notch services
-            and solutions.</p>
+      <h3>Subscribe to Our Newsletter</h3>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="button-link">Subscribe</button>
+      </form>
+    </div>
+  </section>
+    
+    <hr> <!-- Orange line -->
 
-        <h2>Our Mission</h2>
-        <p>At <span class="highlight">WebMastery</span>, our mission is to empower businesses and individuals by crafting exceptional, tailor-made websites that leave a lasting impression on their target audience. We strive to be the go-to destination for clients seeking reliable and innovative web solutions that elevate their online presence.
-
- We aim to
-            exceed customer expectations by delivering innovative, reliable, and cost-effective solutions.</p>
-
-        <h2>Our Vision</h2>
-        <p>We are dedicated to crafting exceptional digital experiences that empower businesses to thrive in the online world. With years of hands-on experience in the field, our team of talented web developers is committed to delivering cutting-edge solutions, tailored to meet our clients' unique needs.</p>
+  <section id="content-section">
+    <div class="container">
+      <div class="card">
+        <h4>Our Mission</h4>
+        <p>At <span style= "color: orange">PixelPro</span>, our mission is to empower businesses and individuals by crafting exceptional, tailor-made websites that leave a lasting impression on their target audience. We strive to be the go-to destination for clients seeking reliable and innovative web solutions that elevate their online presence.
+ We aim to exceed customer expectations by delivering innovative, reliable, and cost-effective solutions.</p>
+      </div>
+      <div class="card">
+        <h4>Our Vision</h4>
+              <p>We are dedicated to crafting exceptional digital experiences that empower businesses to thrive in the online world. With years of hands-on experience in the field, our team of talented web developers is committed to delivering cutting-edge solutions, tailored to meet our clients' unique needs.</p>
 
         <p>Our vision is to create websites that seamlessly blend captivating design, intuitive user experience, and robust functionality. We believe in the power of the web to connect, engage, and inspire, and we strive to be at the forefront of innovation in this ever-evolving industry.</p>
 
         <p>Whether you're a small startup looking to establish your online presence or a large enterprise seeking to enhance your digital capabilities, we're here to help you achieve your goals. With our expertise and passion for web development, we aim to build long-lasting partnerships that drive growth and success for our clients.</p>
 
         <p>Choose us for your web development needs and experience the difference that years of experience and a customer-centric approach can make. Let us bring your vision to life on the digital canvas!</p>
-
-        <h2>Our Values</h2>
-        <ul>
-            <li><strong>Quality:</strong> We are committed to delivering the highest standards of quality in everything
-                we do.</li>
-            <li><strong>Integrity:</strong> We operate with honesty, transparency, and ethical practices.</li>
-            <li><strong>Innovation:</strong> We foster a culture of innovation, encouraging new ideas and continuous
-                improvement.</li>
-            <li><strong>Collaboration:</strong> We believe in the power of collaboration, working closely with our
-                clients to achieve mutual success.</li>
-            <li><strong>Customer Focus:</strong> Our customers are at the center of our business, and we strive to
-                provide excellent service and support.</li>
-        </ul>
-
-        <h2>Contact Us</h2>
-        <p>If you have any questions or inquiries, please don't hesitate to reach out to us. You can contact us via
-            email at <a href="mailto:info@example.com">info@example.com</a> or call us at <a href="tel:+1234567890">+1
-                234 567 890</a>.</p>
     </div>
-</body>
+    </div>
+  </section>
 
-</html>
+  <footer>
+    <div class="container">
+      <div class="footer-info">
+        <p>Address: 123 Main Street, City, Country</p>
+        <p>Phone: +1 234 5678</p>
+        <p>Email: info@example.com</p>
+      </div>
+      <p class="copyright">&copy; 2023 Your Brand. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html
