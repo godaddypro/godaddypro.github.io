@@ -1,88 +1,176 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Our Services</title>
+  <title>PixelPro Web Solutions | Services</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 20px;
+  .services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.service-card {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  width: 380px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h4 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 16px;
+}
+  
+ .quote-sidebar {
+  position: absolute;
+  top: 9;
+  right: 0;
+  width: 300px;
+  padding: 20px;
+  background-color: grey;
+}
+
+.quote-sidebar h5 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.quote-sidebar form {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-sidebar label {
+  margin-bottom: 5px;
+}
+
+.quote-sidebar input,
+.quote-sidebar textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.quote-sidebar button {
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .quote-sidebar {
+    position: static;
+    width: auto;
+    margin-top: 20px;
+  }
+  
+    /* CSS for the orange line */
+    hr {
+      border: none;
+      height: 2px;
+      background-color: orange;
+      margin: 20px 0;
     }
   
-    .navbar {
-      background-color: black;
-      height: 60px;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: #fff;
+      .text-link {
+     color: white; /* Default color */
+     text-decoration: none; /* Remove underline */
+    }
+  
+    .text-link:hover {
+     color: red; /* Color when cursor is placed on the link */
     }
 
-    .navbar-brand {
-      font-size: 24px;
-    }
-
-    h1 {
-      color: red;
-      text-align: center;
-    }
-
-    .services-container {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 30px;
-    }
-
-    .service-card {
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      width: 30%;
-    }
-
-    .service-title {
-      font-size: 20px;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .service-description {
-      color: green;
-      line-height: 1.5;
+    .text-link:active {
+      color: green; /* Color when link is clicked */
     }
   </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar-brand">Web-Mastery</div>
-    <ul class="navbar-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Services.html">Services</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <h1>Our Services</h1>
+  <header>
+    <h1><span style="color: orange">PixelPro</span> Web Solutions</h1>
+    <nav>
+      <ul>
+        <li><a href="indexx.html" class="text-link">Home</a></li>
+        <li><a href="Services.html" class="text-link">Services</a></li>
+        <li><a href="contact.html" class="text-link">Contact</a></li>
+        <li><a href="About.html" class="text-link">About</a></li>
+      </ul>
+    </nav>
+  </header>
+      <div class="moving-text-container">
+  <span class="moving-text">Welcome to PixelPro Web Solutions! Unleash your digital dreams with our creative expertise and pixel-perfect solutions. Let's build together!</span>
+</div>
 
-  <div class="services-container">
-    <div class="service-card">
-      <h2 class="service-title">Front-end Development</h2>
-      <p class="service-description">We specialize in creating beautiful and responsive user interfaces using HTML, CSS, and JavaScript. Our front-end development services ensure that your website or web application looks great on all devices.</p>
+  <section id="about-section">
+    <div class="background-image">
+      <h2>Our Services</h2>
     </div>
+  </section>
 
-    <div class="service-card">
-      <h2 class="service-title">Back-end Development</h2>
-      <p class="service-description">Our back-end development team builds robust and scalable server-side solutions using technologies like Node.js, Python, and PHP. We handle databases, APIs, and server logic to power your web applications.</p>
+  <section id="subscription-section">
+    <div class="container">
+      <h3>Subscribe to Our Newsletter</h3>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
+  </section>
+    
+    <hr> <!-- orange line -->
 
-    <div class="service-card">
-      <h2 class="service-title">Full-stack Development</h2>
-      <p class="service-description">With our full-stack development expertise, we can handle both front-end and back-end development, providing end-to-end solutions for your web projects. We ensure seamless integration and smooth user experiences.</p>
-    </div>
+<section class="services-section">
+  <div class="service-card">
+    <h4>Front-end/Back-end Web Development</h4>
+    <p>Our front-end development services are designed to create visually appealing and user-friendly websites. We utilize the latest technologies such as HTML, CSS, and JavaScript to build responsive and interactive interfaces. Our team of skilled developers ensures that your website not only looks stunning but also functions seamlessly across different devices and browsers. With a focus on user experience, we strive to deliver websites that engage and captivate your target audience.</p>
   </div>
+  <div class="service-card">
+    <h4>WordPress Technology</h4>
+    <p>As experts in WordPress, we offer comprehensive solutions to help you establish a strong online presence. Our team specializes in customizing and optimizing WordPress websites to meet your specific requirements. Whether you need a simple blog or a complex e-commerce platform, we have the expertise to create a highly functional and visually appealing website. We leverage the power of WordPress plugins and themes to enhance the functionality and design of your website, ensuring a seamless user experience.</p>
+  </div>
+  <div class="service-card">
+    <h4>Android Development</h4>
+    <p>We cater to businesses and individuals looking to create innovative and user-friendly mobile applications. Our team of experienced developers utilizes the latest tools and technologies to build robust and scalable Android apps. From conceptualization to deployment, we guide you through the entire app development process, ensuring that your app meets your business objectives and resonates with your target audience. With a focus on performance and usability, we create Android apps that deliver a seamless and engaging user experience.</p>
+  </div>
+    <aside class="quote-sidebar">
+    <h5>Get a Quote</h5>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </aside>
+</section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-info">
+        <p>Address: 123 Main Street, City, Country</p>
+        <p>Phone: +1 234 5678</p>
+        <p>Email: info@example.com</p>
+      </div>
+      <p class="copyright">&copy; 2023 Your Brand. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
