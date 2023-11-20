@@ -1,58 +1,170 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WebMastery</title>
+  <title>PixelPro Web Solutions | Welcome</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <style>
-    body {
-      background-image: url('Umagic_20231115_125725359.jpg');
-      background-size: cover;
-      background-position: center;
-      font-family: Arial, sans-serif;
-    }
-    
-    .navbar {
-      background-color: black;
-      height: 60px;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: #fff;
-    }
+  .hero-section {
+  background-image: url('/storage/emulated/0/Photo Editor/Polish_20231117_081920618.jpg');
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+}
 
-    .navbar-brand {
-      font-size: 24px;
-    }
+.hero-container {
+  text-align: center;
+  color: #fff;
+}
 
-    .tagline {
-      font-size: 18px;
-      margin-top: 20px;
-      color: #fff;
-      text-align: center;
+h2 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 18px;
+}
+  
+  .yellow-section {
+  background-size: contain;
+  background-color: #FDF5E6;
+  padding: 20px;
+}
+
+.yellow-section h5 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.yellow-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.yellow-section li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.yellow-section .number {
+  background-color: #ffcc00;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.yellow-section p {
+  margin: 0;
+}
+  
+  .learn-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #808080;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+  background-color: #555555;
+}
+
+.learn-more-button:active {
+  background-color: #333333;
+}
+  
+     .text-link {
+     color: white; /* Default color */
+     text-decoration: none; /* Remove underline */
     }
   
-     p{
-      color: #fff;
-      text-align: center;
-      font-size: 52px;
-      font-weight: 600;
+    .text-link:hover {
+     color: red; /* Color when cursor is placed on the link */
     }
-     .blue{
-      color: blue;
+
+    .text-link:active {
+      color: green; /* Color when link is clicked */
     }
   </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar-brand">Web-Mastery</div>
-    <ul class="navbar-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Services.html">Services</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <h1 class="tagline">Unlocking Digital Potential</h1>
-  <p>Unleash the Power of Digital Presence: <span class="blue">Elevate Your Business with Our Cutting-Edge Web Development Solutions</span></p>
+  <header>
+    <h1><span style="color: orange">PixelPro</span> Web Solutions</h1>
+    <nav>
+      <ul>
+        <li><a href="indexx.html" class="text-link">Home</a></li>
+        <li><a href="Services.html" class="text-link">Services</a></li>
+        <li><a href="contact.html" class="text-link">Contact</a></li>
+        <li><a href="About.html" class="text-link">About</a></li>
+      </ul>
+    </nav>
+  </header>
+      <div class="moving-text-container">
+  <span class="moving-text">Welcome to PixelPro Web Solutions! Unleash your digital dreams with our creative expertise and pixel-perfect solutions. Let's build together!</span>
+</div>
+
+  <section class="hero-section">
+  <div class="hero-container">
+    <h2>Unlocking Digital Potentials</h2>
+    <p class="tagline">Affordable And Professional Web Design: Elevate Your Business With Our Cutting-Edge Web Development Solutions</p>
+  </div>
+</section>
+
+  <section id="subscription-section">
+    <div class="container">
+      <h3>Subscribe to Our Newsletter</h3>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+    <section class="yellow-section">
+  <h5>Why You Should Hire Us For Your Web Projects?</h5>
+  <ul>
+    <li>
+      <div class="number">1</div>
+      <p>Experienced team of web developers</p>
+    </li>
+    <li>
+      <div class="number">2</div>
+      <p>High-quality and responsive website designs</p>
+    </li>
+    <li>
+      <div class="number">3</div>
+      <p>Customized solutions tailored to your business needs</p>
+    </li>
+    <li>
+      <div class="number">4</div>
+      <p>Timely project delivery</p>
+    </li>
+  </ul>
+    <a href="#" class="learn-more-button">Learn More</a>
+</section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-info">
+        <p>Address: 123 Main Street, City, Country</p>
+        <p>Phone: +1 234 5678</p>
+        <p>Email: info@example.com</p>
+      </div>
+      <p class="copyright">&copy; 2023 Your Brand. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
